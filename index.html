@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">₿ CryptoHub</div>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="admin.html" class="admin-link">⚙ Админ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="coin-container">
+                <div class="bitcoin-3d" id="bitcoin">
+                    <div class="coin-face front">
+                        <span class="coin-symbol">₿</span>
+                        <div class="coin-info" id="coinInfo">
+                            <h2 id="btcTitle">Bitcoin</h2>
+                            <p class="price" id="btcPrice">$67,432</p>
+                            <p class="change" id="btcChange">+2.4%</p>
+                        </div>
+                    </div>
+                    <div class="coin-face back">
+                        <div class="coin-stats" id="coinStats">
+                            <p>Хэшрейт: 623 EH/s</p>
+                            <p>Блоков: 845,231</p>
+                            <p>Сложность: 89.6T</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-text" id="heroText">
+                <h1 id="mainTitle">Добро пожаловать в мир криптовалют</h1>
+                <p id="mainDesc">Следите за курсами и новостями в реальном времени</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>О проекте</h2>
+            <div class="about-content" id="aboutContent">
+                <p id="aboutText">Мы отслеживаем криптовалюты с 2018 года. Наша цель — предоставлять актуальную информацию в удобном формате.</p>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <h2>Последние новости</h2>
+            <div class="news-grid" id="newsGrid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CryptoHub. Все права защищены.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
