@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель CryptoHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">⚙ Админ-панель</div>
+            <ul>
+                <li><a href="index.html">← На сайт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <h1>Редактирование контента</h1>
+        
+        <div class="admin-sections">
+            <section class="admin-section">
+                <h2>Главная страница</h2>
+                <div class="form-group">
+                    <label>Заголовок</label>
+                    <input type="text" id="mainTitleInput" value="Добро пожаловать в мир криптовалют">
+                </div>
+                <div class="form-group">
+                    <label>Описание</label>
+                    <textarea id="mainDescInput">Следите за курсами и новостями в реальном времени</textarea>
+                </div>
+            </section>
+
+            <section class="admin-section">
+                <h2>Биткоин</h2>
+                <div class="form-group">
+                    <label>Название</label>
+                    <input type="text" id="btcTitleInput" value="Bitcoin">
+                </div>
+                <div class="form-group">
+                    <label>Цена</label>
+                    <input type="text" id="btcPriceInput" value="$67,432">
+                </div>
+                <div class="form-group">
+                    <label>Изменение</label>
+                    <input type="text" id="btcChangeInput" value="+2.4%">
+                </div>
+                <div class="form-group">
+                    <label>Хэшрейт</label>
+                    <input type="text" id="btcHashInput" value="623 EH/s">
+                </div>
+                <div class="form-group">
+                    <label>Блоков</label>
+                    <input type="text" id="btcBlocksInput" value="845,231">
+                </div>
+                <div class="form-group">
+                    <label>Сложность</label>
+                    <input type="text" id="btcDiffInput" value="89.6T">
+                </div>
+            </section>
+
+            <section class="admin-section">
+                <h2>О проекте</h2>
+                <div class="form-group">
+                    <label>Текст</label>
+                    <textarea id="aboutTextInput">Мы отслеживаем криптовалюты с 2018 года. Наша цель — предоставлять актуальную информацию в удобном формате.</textarea>
+                </div>
+            </section>
+
+            <section class="admin-section">
+                <h2>Новости</h2>
+                <div id="newsList"></div>
+                <button onclick="addNews()" class="add-btn">+ Добавить новость</button>
+            </section>
+
+            <button onclick="saveData()" class="save-btn">💾 Сохранить все изменения</button>
+            <div id="saveStatus" class="save-status"></div>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
